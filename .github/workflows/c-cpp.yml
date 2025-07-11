@@ -28,12 +28,12 @@ jobs:
             git pull origin master
             git add execs
             git commit -m "Update prebuilt binaries" || echo "No changes to commit"
-            git pull --rebase origin main || echo "No remote changes to rebase"
+            git pull --rebase origin master || echo "No remote changes to rebase"
           
 
     - name: Push all commits
       uses: ad-m/github-push-action@v0.6.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: main
+        branch: master
     
