@@ -25,6 +25,7 @@ jobs:
 
     - name: Commit 5 times
       run: |
+            git pull origin master
             git add execs
             git commit -m "Update prebuilt binaries" || echo "No changes to commit"
             git pull --rebase origin main || echo "No remote changes to rebase"
