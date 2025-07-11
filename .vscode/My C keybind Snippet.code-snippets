@@ -1,0 +1,14 @@
+{
+  "My C Keybind Snippet": {
+    "prefix": "mycfunc",
+    "body": [
+      "#include <stdio.h>",
+      "",
+      "int main() {",
+      "    $0",
+      "    return 0;",
+      "}"
+    ],
+    "description": "barebones"
+  }
+}
