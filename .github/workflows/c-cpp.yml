@@ -23,15 +23,15 @@ jobs:
            git config user.name "enessmr"
            git config user.email "enessmr22@proton.me"
 
-    - name: Commit 5 times
+    - name: C
       run: |
             git pull origin master
-            git add execs
+            git add .
             git commit -m "Update prebuilt binaries" || echo "No changes to commit"
             git pull --rebase origin master || echo "No remote changes to rebase"
           
 
-    - name: Push all commits
+    - name: push myself so i can see this sh1t
       uses: ad-m/github-push-action@v0.6.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
