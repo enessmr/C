@@ -7,8 +7,8 @@ clean:
 
 build:
 	gcc "src/first_C_program/main.c" -o "src/first_C_program/main"
-	gcc "src/veriablez/int.c" -o "src/veriablez/int"
-	gcc "src/veriablez/float.c" -o "src/veriablez/float"
+	gcc "src/veriablez/int/int.c" -o "src/veriablez/int/int"
+	gcc "src/veriablez/float/float.c" -o "src/veriablez/float/float"
 
 mkdir:
 	mkdir -p execs
@@ -16,5 +16,5 @@ mkdir:
 
 copy_prebuilt:
 	cp -r src/first_C_program/main ./execs/first_C_program
-	cp -r src/veriablez/int ./execs/veriablez/int
-	cp -r src/veriablez/float ./execs/veriablez/float
+	cp -r src/veriablez/int/int ./execs/veriablez/int
+	cp -r src/veriablez/float/float ./execs/veriablez/float
